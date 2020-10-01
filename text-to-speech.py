@@ -10,7 +10,7 @@ import os
 # mytext = 'Welcome to geeksforgeeks!'
 # mytext = 'My name is Rahul Roy'
 # mytext = '1234'
-mytext = input("Enter your text: ")
+mytext = input("Enter your text you want to change ")
 
 
 # Language in which you want to convert
@@ -20,11 +20,11 @@ language = 'en'
 # here we have marked slow=False. Which tells
 # the module that the converted audio should
 # have a high speed
-myobj = gTTS(text=mytext, lang=language, slow=False)
+mydoc = gTTS(text=mytext, lang=language, slow=False)
 
 # Saving the converted audio in a mp3 file named
 # welcome
-myobj.save("welcome.mp3")
+mydoc.save("welcome.mp3")
 
 # Playing the converted file
 # os.system("mpg321 welcome.mp3")
